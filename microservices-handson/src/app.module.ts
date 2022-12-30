@@ -11,6 +11,13 @@ import { UserModule } from './user/user.module';
         name: 'COMMUNICATION',
         transport: Transport.TCP,
       },
+      {
+        name: 'ANALYTICS',
+        transport: Transport.TCP,
+        options: {
+          port: 5005,
+        },
+      },
     ]),
     UserModule,
   ],
